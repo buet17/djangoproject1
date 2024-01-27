@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 
@@ -7,4 +7,7 @@ def home(request):
 
 def service(request):
     return render(request,'service.html')
+
+def members(request):
+    return HttpResponse('Hello World!')
     
